@@ -12,8 +12,9 @@ from info import dysplay
 from dettagli import dysplay1
 import webbrowser
 from api import give_data
-OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\giaco\OneDrive\Documenti\Desktop\PRESEPEVIVENTE\build\assets\frame0")
+OUTPUT_PATH = Path(__file__).parent  # Questo punta alla cartella "build"
+ASSETS_PATH = OUTPUT_PATH / "assets" / "frame0"  # Percorso relativo al file
+
 
 
 def relative_to_assets(path: str) -> Path:
